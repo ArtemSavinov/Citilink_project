@@ -40,11 +40,6 @@ def test_buy_product(set_group):
     cp = Checkout_page(driver)
     cp.checkout()
 
-    assert fp.get_main_word() == cp.get_main_word_checkout()
-    print(fp.get_main_word(),
-          cp.get_main_word_checkout(),
-        "Product OK")
-
     print("Finish Test")
     driver.quit()
 

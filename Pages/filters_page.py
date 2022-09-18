@@ -90,6 +90,6 @@ class Filters_page(Base):
         self.select_brand_filter()
         self.select_paramet_1()
         self.select_paramet_2()
-        self.assert_word(self.get_main_word(), 'Компьютер MSI Codex 5 11SI-465XRU, черный')
         self.select_product_1()
+        self.assert_word(self.get_main_word(), 'Компьютер MSI Codex 5 11SI-465XRU, черный')
         self.click_cart_button()
